@@ -24,7 +24,7 @@ This bot uses 6 packages from the npm site.
 - fivem
 - QBcore
 
-**DOCUMENTATION**
+#DOCUMENTATION
 
 Config and install
 
