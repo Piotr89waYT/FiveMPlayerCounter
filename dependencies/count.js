@@ -1,5 +1,5 @@
 const axios = require('axios');
-const QBCore = require('QBCore');
+const QBCore = global.exports['qb-core'].GetCoreObject();
 const fivem = require('fivem');
 const config = require('./config.json')
 
@@ -19,19 +19,24 @@ setInterval(async () => {
                 console.log('Player count:', playerCount);
 
                 // Fetch police data from QBCore
-                const playerDataRequests = players.map(playerId => QBCore.Functions.GetPlayer(parseInt(playerId)));
-                return Promise.all(playerDataRequests);
-            })
-            .then(playerData => {
-                let policeCount = 0;
-                let staffCount = 0;
+                function getPoliceCount() {
+                    const players = QBCore.Functions.GetPlayers();
+                    let policeCount = 0;
+                
+                    players.forEach(playerId => {
+                        const player = QBCore.Functions.GetPlayer(playerId);
+                        if (player && player.PlayerData.job.name === config.jobName) {
+                            if (player.PlayerData.job.onduty) {
+                                policeCount++;
+                            }
+                        }
+                    });
 
-                playerData.forEach(player => {
-                    if (player && player.PlayerData && player.PlayerData.job && player.PlayerData.job.name === config.jobName) {
-                        policeCount++;
-                    }
-                });
+                    return policeCount;
+                }
 
+                const policeCount =  getPoliceCount();
+                console.log('${policeCount} pigs online');
                 console.log('Data sent to Discord bot');
             })
             .catch(error => {
