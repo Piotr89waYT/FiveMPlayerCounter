@@ -1,0 +1,5 @@
+{
+    "serverIP": "your_server_ip", 
+    "serverPort": 30120,
+    "jobName": "police"
+}
