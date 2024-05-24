@@ -1,5 +1,6 @@
 {
     "serverIP": "your_server_ip", 
     "serverPort": 30120,
-    "jobName": "police"
+    "jobName": "police",
+    "apiURL": "http://localhost:3000/getCounts"
 }

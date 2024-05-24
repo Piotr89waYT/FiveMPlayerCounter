@@ -26,7 +26,11 @@ This bot uses 6 packages from the npm site.
 
 # DOCUMENTATION
 
-Config and install
+Setting the discord bot up:
+
+First go to the Discord Developer Portal and create a new bot and assign it administrator permissions. After that grab the token for it and got to the 'dotenv.env' file and add your token into there. Dotenv is designed to keep your token secure from hackers and all sorts of bad people when you are hosting your bot.
+
+Config and install:
 
 First make sure your server supports JavaScript. You do this by making a "fxmanifest.lua" file. I have provided on in the "dependencies" If you want to know what it looks like go in there and have a look.
 
@@ -38,8 +42,8 @@ From here everything should work without an issue.
 
 Of course host this bot, either of your FiveM server or a sperate hosting. No clue what you choose, just make sure it works.
 
-Config.json
+Config.json:
 
 The config json stores everything for the server owner/developer that will use this for their own servers. Everything from role names to even the bot token. If you are unexperienced with JavaScript or with development in general just edit the config file.
 
-The config file stores some criticaly needed information in order for the count.js script to work. It need the server IP and Port to know where to pull the information from. Inside the config there is also the 'jobName' config. That stores the name of the police job. By default the job should just be called 'police' but if it's not adjust the 'jobName' accordingly.
+The config file stores some criticaly needed information in order for the count.js script to work. It need the server IP and Port to know where to pull the information from. Inside the config there is also the 'jobName' config. That stores the name of the police job. By default the job should just be called 'police' but if it's not adjust the 'jobName' accordingly. Don't touch the localhost unless you are changing the localhost port within the code.
