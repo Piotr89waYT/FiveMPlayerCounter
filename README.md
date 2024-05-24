@@ -1,9 +1,12 @@
 # FiveMPlayerCounter
+
+**IF YOU DO NOT KNOW WHAT YOU ARE DOING DOWNLOAD THE RELEASE. IF YOU DO KNOW WHAT YOU ARE DOING DOWNLOAD THE SOURCE**
+
 Discord bot that count the amount of players online. It's made to count and divide players into roles: Police and Player.
 
 If this bot does turn out to be popular and people will want more features or something, I will continue development and maybe even host this bot myself making a config panel for the users so they can enjoy a simple bot that keeps track of your FiveM player statistics for you.
 
-!!THIS BOT ONLY WORKS WITH THE QBCORE FRAMEWORK. BUT IF YOU WANT TO MAKE THIS WORK WITH ESX OR ANY OTHER FRAMEWORK OUT THERE, BE MY GUEST. JUST PROVIDE CREDIT PLEASE AND THANK YOU!!
+**!!THIS BOT ONLY WORKS WITH THE QBCORE FRAMEWORK. BUT IF YOU WANT TO MAKE THIS WORK WITH ESX OR ANY OTHER FRAMEWORK OUT THERE, BE MY GUEST. JUST PROVIDE CREDIT PLEASE AND THANK YOU!!**
 
 Made by Piotr89waYT and ChatGPT (kek). I made this for the 90s RP server I am a developer. They way the bot works is simple. There is a count script which goes and uses both the QBcore API and FiveM API.
 
