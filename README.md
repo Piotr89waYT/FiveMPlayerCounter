@@ -24,6 +24,22 @@ This bot uses 6 packages from the npm site.
 - fivem
 - QBcore
 
+# THE WAY THIS WORKS
+
+To accuratly explain how this bot and the scripts work, it's helpful to break the flow up into 3 stages.
+
+**Stage 1**
+
+Stage 1 is the server stage. The script uses QB-Core and the default FiveM libaries for JavaScript. It begins by creating a server instance within the FiveM library to allow the script to find which server it has to read from using the server IPs and Ports. After that it fetches the Player count from the FiveM library and the Police Count online from the QB-Core library. The way it finds the Police count is via the qb-police job name. From there the script hosts a local HTTP server, again from the FiveM library. This will allow the dicord bot to fetch the data.
+
+**Stage 2**
+
+Stage 2 is the Bot stage. Whilst stage 1 is happening over on the actual FiveM server stage 2 initializes the discord bot. The bot launches and does some console.logs to check if everything is working smoothly.
+
+**Stage 3**
+
+Stage 3 is where the magic happens. Once you execute the slash command the bot and script work in hand via the HTTP server, the information gets sent and received and once it gets received, a discord message is sent into the chat with the Player count.
+
 # DOCUMENTATION
 
 Setting the discord bot up:
