@@ -34,7 +34,7 @@ Config and install:
 
 First make sure your server supports JavaScript. You do this by making a "fxmanifest.lua" file. I have provided on in the "dependencies" If you want to know what it looks like go in there and have a look.
 
-Next up you will need the "count.js" (again you will find it in the "dependencies" folder). Put that in your"[RESOURCES]" folder or make a new folder for the scripts or something.
+Next up you will need the "count.js" (again you will find it in the "dependencies" folder). Put that in your "[RESOURCES]" folder or make a new folder for the scripts or something.
 
 After you get that script into the server add it to your server config and load it up.
 
